@@ -1,3 +1,11 @@
+/***************************************************************************
+ @file: TestAvlTree.java
+ @description: This program implements a test Avl that makes sure each function
+ is properly inserted,balanced and removed
+ @author:  Kennedy Kirk
+ @date  Oct 24 ,2024
+
+ *******************************************************************************/
 public class TestAvl {
     // Test program
     public static void main( String [ ] args ) {
@@ -10,7 +18,7 @@ public class TestAvl {
 
         // inserts sequence of numbers "GAP" apart into AVL Tree
         for (int i = GAP; i != 0; i = (i + GAP) % NUMS) {
-            //    System.out.println( "INSERT: " + i );
+            //   System.out.println( "INSERT: " + i );
             t.insert(i);
             // checks the balance of the tree after insertion
             if (NUMS < SMALL)
@@ -19,7 +27,7 @@ public class TestAvl {
 
         // removes odd numbers
         for (int i = 1; i < NUMS; i += 2) {
-            //   System.out.println( "REMOVE: " + i );
+             //  System.out.println( "REMOVE: " + i );
             t.remove(i);
 
             if (NUMS < SMALL)
