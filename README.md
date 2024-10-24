@@ -65,16 +65,27 @@ Run your program several times for different number of lines of your dataset, N,
 Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot the running time (in seconds) and rate (in seconds per node) vs. N for each case, comparing the BST and AVL Trees (i.e., two lines per graph). Take a screenshot of your graph and put them here by modifying this file, committing, and pushing it to this repository.
 
 BST vs. AVL Tree running time (insertion):
-(insert here)
+![Inserted BST Sorted and Inserted Avl Sorted](https://github.com/user-attachments/assets/c27debd8-67e1-4e94-ba09-ec3ea4bcf2a2)
+![Random BST Insertion and Random Avl Insertion (1)](https://github.com/user-attachments/assets/0c575db9-3eb7-4428-a366-cb764c66520d)
+
 
 BST vs. AVL Tree running time (search):
 (insert here)
+![Random BST Searched and Random Avl Searched](https://github.com/user-attachments/assets/f2d1fa35-4786-4826-a164-3d9e2cf18f0a)
 
+![Searched BST sorted and Searched Avl Sorted (1)](https://github.com/user-attachments/assets/51547551-1b6a-4f61-aa93-4b39366258ca)
 BST vs. AVL Tree running rate (insertion):
-(insert here)
+(insert here
+![Inserted BSTRates and Insert Avl Rates](https://github.com/user-attachments/assets/fab4ebb7-8911-4d34-8225-47976d3b135a)
+![Random BST Insertion Rates and Random AVL insertion Rates](https://github.com/user-attachments/assets/b02f967a-d2aa-4695-8faa-6d83dd145e4a)
+
 
 BST vs. AVL Tree running rate (search):
 (insert here)
+![Searched BST Sorted Rate and Searched Avl Sorted Rate ](https://github.com/user-attachments/assets/16c1b1ca-c18a-4350-97d6-74b3159ba837)
+
+![Random BST Search Rate and Random Avl Search Rate](https://github.com/user-attachments/assets/b236bfeb-077d-4e98-9f83-f9d272378b80)
+
 
 ## Submission:
 
