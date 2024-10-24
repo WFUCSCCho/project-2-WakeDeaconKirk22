@@ -1,3 +1,4 @@
+
 Random Insertion Time:
 AVL:2291458
 BST:44257542
@@ -11,6 +12,7 @@ Sorted Search Time:
 AVL:532500
 BST:1264917
 (above is 10)
+
 Random Insertion Time:
 AVL:7139958
 BST:53396208
@@ -24,6 +26,7 @@ Sorted Search Time:
 AVL:615709
 BST:6515375
 (above is 100)
+
 Random Insertion Time:
 AVL:34970292
 BST:118442167
@@ -37,6 +40,7 @@ Sorted Search Time:
 AVL:8218292
 BST:26272708
 (above is 1000)
+
 Random Insertion Time:
 AVL:139299625
 BST:467480375
@@ -50,6 +54,7 @@ Sorted Search Time:
 AVL:48369750
 BST:192626292
 (above is 10000)
+
 Random Insertion Time:
 AVL:40329333
 BST:116817541
@@ -63,6 +68,7 @@ Sorted Search Time:
 AVL:5503750
 BST:41748833
 (above is 2000)
+
 Random Insertion Time:
 AVL:119237667
 BST:195552500
@@ -76,6 +82,7 @@ Sorted Search Time:
 AVL:13796625
 BST:69706583
 (above is 3000)
+
 Random Insertion Time:
 AVL:103812958
 BST:233602500

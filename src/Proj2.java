@@ -1,6 +1,6 @@
 /***************************************************************************
- @file: TestAvlTree.java
- @description: This is the main function of the program where it record the
+ @file: Proj2.java
+ @description: This is the main function of the program where it records the
  run times of AVL and BST trees using a Array List
  @author:  Kennedy Kirk
  @date  Oct 24 ,2024
@@ -43,6 +43,7 @@ public class Proj2 {
         for(int i = 0; i<numLines; i++) {
             NBAPlayer.add(inputFileNameScanner.nextLine());
         }
+        //backup arrayList
         Backup=NBAPlayer;
 
 	// FINISH ME
@@ -58,6 +59,7 @@ public class Proj2 {
     long bstSearchTimeRandom = searchTime(mybst,Backup);
     long avlSearchTimeRandom = searchTime(avlTree,Backup);
 
+        //Gives the sorted Search and insertion times
     Collections.sort(NBAPlayer);
     long  bstSortedSearchTime = searchTime(mybst,NBAPlayer);
     long avlSortedSearchTime = searchTime(avlTree,NBAPlayer);
@@ -68,7 +70,7 @@ public class Proj2 {
 
 
 
-
+//Formats the output
         String result =
                          "Random Insertion Time:\n" + "AVL:" + avlRandInsertTime + "\n" + "BST:"+ bstRandInsertTime + "\n" +
                         "Sorted Insertion Time:\n" + "AVL:"+ avlSortedInsertTime + "\n" + "BST:"+ bstSortedInsertTime + "\n"
@@ -78,7 +80,7 @@ public class Proj2 {
         System.out.println(result);
 
 
-
+// Uses the writes to the output.txt of all the result times
 String outFilePath = "./output.txt";
 
 
@@ -89,7 +91,8 @@ String outFilePath = "./output.txt";
 
     }
     private static long insertTime(BST<NBAPlayer> bst , ArrayList<String>NBAPlayer) {
-        long time = System.nanoTime();
+        // Funnction call to count the insertion time for BST
+        long time = System.nanoTime(); //start time
 
             for(int i = 0; i < NBAPlayer.size(); i++) {
                 String[] command = NBAPlayer.get(i).split(",");
@@ -115,15 +118,16 @@ String outFilePath = "./output.txt";
                         Double.parseDouble(command[19]), // assist percentage
                         Double.parseDouble(command[20]),
                         command[21]);
-                bst.insert(player);
+                bst.insert(player);// inserts the player object
 
         }
         long end = System.nanoTime();
-        return end - time;
+        return end - time; // total time
     }
 
     private static long insertTime(AvlTree<NBAPlayer> AvlTree, ArrayList<String>NBAPlayer) {
-        long time = System.nanoTime();
+        long time = System.nanoTime(); //start time
+        // Funnction call to count the insertion time for AVL
         for(int i = 0; i < NBAPlayer.size(); i++) {
             String[] command = NBAPlayer.get(i).split(",");
             NBAPlayer player = new NBAPlayer( Integer.parseInt(command[0]), // id
@@ -148,14 +152,16 @@ String outFilePath = "./output.txt";
                     Double.parseDouble(command[19]), // assist percentage
                     Double.parseDouble(command[20]),
                     command[21]);
-            AvlTree.insert(player);
+            AvlTree.insert(player); // inserts the player object
         }
-        long end = System.nanoTime();
+        long end = System.nanoTime(); // total time
         return end - time;
     }
 
 private static long searchTime(AvlTree<NBAPlayer> AvlTree, ArrayList<String>NBAPlayer) {
-        long time = System.nanoTime();
+    // Funnction call to count the search time for AVL
+        long time = System.nanoTime(); //start time
+
         for(int i = 0; i < NBAPlayer.size(); i++) {
             String[] command = NBAPlayer.get(i).split(",");
             NBAPlayer player = new NBAPlayer( Integer.parseInt(command[0]), // id
@@ -180,13 +186,14 @@ private static long searchTime(AvlTree<NBAPlayer> AvlTree, ArrayList<String>NBAP
                     Double.parseDouble(command[19]), // assist percentage
                     Double.parseDouble(command[20]),
                     command[21]);
-            AvlTree.contains(player);
+            AvlTree.contains(player);  // searches the player object
         }
-    long end = System.nanoTime();
+    long end = System.nanoTime(); // total time
     return end - time;
 }
 private static long searchTime(BST<NBAPlayer>bst ,ArrayList<String>NBAPlayer) {
-        long time = System.nanoTime();
+    // Funnction call to count the search time for BST
+        long time = System.nanoTime(); //start time
         for(int i = 0; i < NBAPlayer.size(); i++) { String[] command = NBAPlayer.get(i).split(",");
             NBAPlayer player = new NBAPlayer( Integer.parseInt(command[0]), // id
                     command[1],//name
@@ -210,10 +217,10 @@ private static long searchTime(BST<NBAPlayer>bst ,ArrayList<String>NBAPlayer) {
                     Double.parseDouble(command[19]), // assist percentage
                     Double.parseDouble(command[20]),
                     command[21]);
-            bst.search(player);
+            bst.search(player);  // searches the player object
         }
     long end = System.nanoTime();
-    return end - time;
+    return end - time; // total time
   }
 
     public static void writeToFile(String content, String filePath) {

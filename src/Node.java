@@ -1,8 +1,8 @@
 /********************************************************************************************
- @file: Parser.java
+ @file: Node.java
  @description: This program implements a Node generic class that represent the nodes of BST
  @author:  Kennedy Kirk
- @date  Oct 24,2024
+ @date  Oct 24 ,2024
 
  *******************************************************************************************/
 

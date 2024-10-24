@@ -7,7 +7,7 @@
 
  *******************************************************************************/
 public class TestAvl {
-    // Test program
+    // Test AVl program
     public static void main( String [ ] args ) {
         AvlTree<Integer> t = new AvlTree<>();
         final int SMALL = 40;
