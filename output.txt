@@ -138,3 +138,51 @@ Sorted Search Time:
 AVL:50694250
 BST:219022834
 (above is 12K)
+Random Insertion Time:
+AVL:233811250
+BST:663085042
+Sorted Insertion Time:
+AVL:42524708
+BST:148231375
+Random Search Time:
+AVL:37336292
+BST:176553250
+Sorted Search Time:
+AVL:51349000
+BST:184464250
+Random Insertion Time:
+AVL:317540000
+BST:331258833
+Sorted Insertion Time:
+AVL:46146833
+BST:206551209
+Random Search Time:
+AVL:45979959
+BST:258184459
+Sorted Search Time:
+AVL:44713375
+BST:187124666
+Random Insertion Time:
+AVL:19002333
+BST:304488416
+Sorted Insertion Time:
+AVL:3480250
+BST:137841375
+Random Search Time:
+AVL:4966416
+BST:178814208
+Sorted Search Time:
+AVL:3181166
+BST:120584000
+Random Insertion Time:
+AVL:13571000
+BST:221874208
+Sorted Insertion Time:
+AVL:5543875
+BST:227337417
+Random Search Time:
+AVL:6456708
+BST:204130667
+Sorted Search Time:
+AVL:3703959
+BST:165612875
